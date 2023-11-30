@@ -1,0 +1,5037 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto; /* Centrar la tabla */
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Job</th>
+      <th>Años de experiencia</th>
+      <th>Job Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Engineer, production</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Personnel officer</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Marine scientist</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Advertising account executive</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Public librarian</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Economist</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Insurance claims handler</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Programmer, multimedia</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Designer, blown glass/stained glass</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Retail manager</td>
+      <td>7</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Records manager</td>
+      <td>7</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>IT sales professional</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Environmental consultant</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Product/process development scientist</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Nurse, learning disability</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Industrial/product designer</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Photographer</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Fashion designer</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Lecturer, higher education</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Technical author</td>
+      <td>4</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Geneticist, molecular</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Public affairs consultant</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Heritage manager</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Fast food restaurant manager</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Chartered legal executive (England and Wales)</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Teacher, secondary school</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Management consultant</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Sales promotion account executive</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Administrator, local government</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Manufacturing systems engineer</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Armed forces technical officer</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Museum/gallery exhibitions officer</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Amenity horticulturist</td>
+      <td>11</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Ceramics designer</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Systems developer</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Graphic designer</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Sound technician, broadcasting/film/video</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Technical brewer</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineering geologist</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Fish farm manager</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Music tutor</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Fitness centre manager</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Exhibitions officer, museum/gallery</td>
+      <td>5</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Tree surgeon</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Osteopath</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Fashion designer</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Programmer, multimedia</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Market researcher</td>
+      <td>4</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>English as a second language teacher</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Arboriculturist</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Actor</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Loss adjuster, chartered</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Accountant, chartered management</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Doctor, general practice</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Haematologist</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Forensic scientist</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, civil (contracting)</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, building services</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Surveyor, building control</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Facilities manager</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Holiday representative</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Archivist</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Video editor</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Stage manager</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Restaurant manager</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Video editor</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Research scientist (physical sciences)</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Administrator, sports</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Scientist, product/process development</td>
+      <td>7</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, civil (consulting)</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Teacher, music</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Chief Marketing Officer</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Museum/gallery curator</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Adult nurse</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Astronomer</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Lighting technician, broadcasting/film/video</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Prison officer</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Animal technologist</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Data processing manager</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Armed forces logistics/support/administrative officer</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, structural</td>
+      <td>7</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Nurse, children's</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Education administrator</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Toxicologist</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Designer, fashion/clothing</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Immunologist</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Designer, multimedia</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Lawyer</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, automotive</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Restaurant manager, fast food</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Psychiatrist</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Meteorologist</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Make</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Multimedia programmer</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Teacher, English as a foreign language</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Scientist, research (medical)</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Journalist, magazine</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Secretary/administrator</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Press sub</td>
+      <td>19</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Database administrator</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Buyer, industrial</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Investment banker, corporate</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Psychologist, sport and exercise</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Toxicologist</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>General practice doctor</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Merchandiser, retail</td>
+      <td>4</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Fitness centre manager</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Secretary/administrator</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Tree surgeon</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Scientist, marine</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, building</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Private music teacher</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Exhibitions officer, museum/gallery</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Warehouse manager</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>IT technical support officer</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Town planner</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Psychotherapist, dance movement</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, energy</td>
+      <td>18</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Conservator, museum/gallery</td>
+      <td>17</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Astronomer</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Administrator</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Ergonomist</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Learning disability nurse</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Medical physicist</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Hospital doctor</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Volunteer coordinator</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Audiological scientist</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Fisheries officer</td>
+      <td>19</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Fast food restaurant manager</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Ecologist</td>
+      <td>2</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Computer games developer</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Camera operator</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Clinical biochemist</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Local government officer</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, structural</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, drilling</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Careers adviser</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Research scientist (physical sciences)</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, communications</td>
+      <td>9</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Meteorologist</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Local government officer</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Health and safety adviser</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>IT trainer</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Loss adjuster, chartered</td>
+      <td>7</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Forensic psychologist</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Call centre manager</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Sports therapist</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Psychologist, prison and probation services</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Radiographer, diagnostic</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Network engineer</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Psychologist, sport and exercise</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Financial adviser</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Materials engineer</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Building services engineer</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Academic librarian</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Tree surgeon</td>
+      <td>19</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Development worker, international aid</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Recycling officer</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Development worker, community</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Technical brewer</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Corporate investment banker</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Mining engineer</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Health and safety adviser</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Optometrist</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Therapist, art</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Cabin crew</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Sports coach</td>
+      <td>11</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Buyer, retail</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Merchant navy officer</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Primary school teacher</td>
+      <td>17</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, land/geomatics</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Broadcast presenter</td>
+      <td>5</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Teacher, special educational needs</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Arboriculturist</td>
+      <td>17</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Minerals surveyor</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Passenger transport manager</td>
+      <td>5</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Administrator, charities/voluntary organisations</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Financial controller</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Arts development officer</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Lawyer</td>
+      <td>15</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Horticultural therapist</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Administrator, education</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Buyer, retail</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Clinical research associate</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Event organiser</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Operational researcher</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Retail buyer</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Aid worker</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Surveyor, land/geomatics</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Microbiologist</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Landscape architect</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Producer, television/film/video</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Holiday representative</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Economist</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Arboriculturist</td>
+      <td>8</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Fitness centre manager</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Civil engineer, contracting</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Magazine journalist</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Risk manager</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Psychologist, sport and exercise</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Horticultural consultant</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>English as a second language teacher</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Economist</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Production manager</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Contracting civil engineer</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, mining</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Equality and diversity officer</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Fast food restaurant manager</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Contractor</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Pilot, airline</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Quantity surveyor</td>
+      <td>10</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Arts administrator</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Surveyor, building</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Geographical information systems officer</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Lexicographer</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Restaurant manager, fast food</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Legal executive</td>
+      <td>2</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Retail manager</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Location manager</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Designer, ceramics/pottery</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>IT sales professional</td>
+      <td>19</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Energy manager</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Teacher, adult education</td>
+      <td>10</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Banker</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Accountant, chartered management</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Teaching laboratory technician</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Banker</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Product manager</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Audiological scientist</td>
+      <td>10</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Clinical psychologist</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Magazine journalist</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Data processing manager</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Web designer</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Sport and exercise psychologist</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Accountant, chartered public finance</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Waste management officer</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Housing manager/officer</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Copy</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Patent examiner</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Financial adviser</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Set designer</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Music tutor</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Land</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Radio producer</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Field seismologist</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Multimedia programmer</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Arts administrator</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, speech and language</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Bonds trader</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Metallurgist</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Scientific laboratory technician</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Public affairs consultant</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Television/film/video producer</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Information systems manager</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Operations geologist</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Forest/woodland manager</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Contractor</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Graphic designer</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Purchasing manager</td>
+      <td>18</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Radiation protection practitioner</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Environmental manager</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Insurance underwriter</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, structural</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, hydrographic</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Psychologist, sport and exercise</td>
+      <td>15</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Dietitian</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Mechanical engineer</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Environmental education officer</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Sports administrator</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Curator</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Tax adviser</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Fast food restaurant manager</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Paediatric nurse</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Field trials officer</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Theatre director</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Building services engineer</td>
+      <td>15</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Product manager</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Optometrist</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, maintenance (IT)</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Financial adviser</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Camera operator</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Teacher, special educational needs</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Plant breeder/geneticist</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Energy manager</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Field trials officer</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Insurance risk surveyor</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Immunologist</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Administrator, Civil Service</td>
+      <td>10</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Press photographer</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Public librarian</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Amenity horticulturist</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Midwife</td>
+      <td>6</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Retail banker</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Orthoptist</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Sport and exercise psychologist</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, electrical</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Designer, fashion/clothing</td>
+      <td>9</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, control and instrumentation</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Sub</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, rural practice</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Geochemist</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Quantity surveyor</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Financial risk analyst</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Probation officer</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Commercial/residential surveyor</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Clinical cytogeneticist</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Special educational needs teacher</td>
+      <td>15</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Travel agency manager</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Health and safety inspector</td>
+      <td>10</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Barista</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Production manager</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>IT trainer</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Television floor manager</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Commissioning editor</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Comptroller</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Financial trader</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Further education lecturer</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Telecommunications researcher</td>
+      <td>7</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Theatre manager</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Communications engineer</td>
+      <td>5</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Marine scientist</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Investment banker, operational</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Tour manager</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Ambulance person</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Horticulturist, commercial</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Radiographer, therapeutic</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, automotive</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Programmer, multimedia</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Sports therapist</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Nurse, learning disability</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, speech and language</td>
+      <td>7</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Dance movement psychotherapist</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Insurance account manager</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Curator</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Psychotherapist</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Dancer</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Community education officer</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Administrator, Civil Service</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Programmer, systems</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Nurse, learning disability</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Geneticist, molecular</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Interior and spatial designer</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Museum education officer</td>
+      <td>4</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Retail merchandiser</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Commercial art gallery manager</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Arts development officer</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Geologist, wellsite</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Designer, blown glass/stained glass</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Information officer</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Civil Service fast streamer</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Oncologist</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Accountant, chartered certified</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Data scientist</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Environmental education officer</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Occupational psychologist</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Training and development officer</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Museum/gallery exhibitions officer</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Quantity surveyor</td>
+      <td>7</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Soil scientist</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Gaffer</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Teacher, early years/pre</td>
+      <td>11</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Fisheries officer</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Chemist, analytical</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Orthoptist</td>
+      <td>17</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Museum education officer</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Risk manager</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Mining engineer</td>
+      <td>5</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Fast food restaurant manager</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineering geologist</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Technical brewer</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Nature conservation officer</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Theatre director</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Surveyor, insurance</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Biomedical engineer</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Scientist, research (physical sciences)</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Curator</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Administrator, education</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, aeronautical</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Designer, multimedia</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Accountant, chartered</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Press sub</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Editorial assistant</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Print production planner</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Financial planner</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Retail buyer</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Restaurant manager, fast food</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Magazine features editor</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, production</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Journalist, magazine</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Pharmacist, hospital</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Nature conservation officer</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Copy</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Public affairs consultant</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Research officer, trade union</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Hotel manager</td>
+      <td>17</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Armed forces training and education officer</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Charity officer</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Primary school teacher</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Archaeologist</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Chief Executive Officer</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, civil (contracting)</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Solicitor</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Phytotherapist</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Psychologist, occupational</td>
+      <td>19</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Energy engineer</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Proofreader</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Doctor, hospital</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Dancer</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, manufacturing systems</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Surveyor, rural practice</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Broadcast journalist</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Producer, radio</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Market researcher</td>
+      <td>7</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Drilling engineer</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Biomedical engineer</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Psychologist, occupational</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Horticultural consultant</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, insurance</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Television camera operator</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Secretary/administrator</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Insurance underwriter</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Housing manager/officer</td>
+      <td>8</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Producer, television/film/video</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Scientist, water quality</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Administrator, sports</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Psychologist, prison and probation services</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Forensic scientist</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Sales professional, IT</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Early years teacher</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Lecturer, further education</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Immigration officer</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Pharmacist, community</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Health physicist</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Teacher, special educational needs</td>
+      <td>9</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Accountant, chartered management</td>
+      <td>8</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Control and instrumentation engineer</td>
+      <td>11</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Facilities manager</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Education administrator</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Osteopath</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Therapist, music</td>
+      <td>9</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Hydrogeologist</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Counsellor</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Artist</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Recycling officer</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Sub</td>
+      <td>10</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Television production assistant</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Insurance account manager</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Interior and spatial designer</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Teacher, English as a foreign language</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Event organiser</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, civil (contracting)</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Agricultural consultant</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Teacher, secondary school</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Probation officer</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Chief of Staff</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Immigration officer</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, civil (contracting)</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Veterinary surgeon</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Chartered legal executive (England and Wales)</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Chief Strategy Officer</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Mental health nurse</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Tourism officer</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Technical author</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Drilling engineer</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Clinical cytogeneticist</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, art</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Geophysicist/field seismologist</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Television camera operator</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Actuary</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Development worker, international aid</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Podiatrist</td>
+      <td>15</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Designer, industrial/product</td>
+      <td>10</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Field trials officer</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Embryologist, clinical</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Chartered loss adjuster</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Public relations officer</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Tourism officer</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Chief Financial Officer</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, broadcasting (operations)</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Designer, multimedia</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Careers information officer</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Production engineer</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Colour technologist</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Armed forces training and education officer</td>
+      <td>4</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Firefighter</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Video editor</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Architectural technologist</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, aeronautical</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Veterinary surgeon</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, sports</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Pilot, airline</td>
+      <td>15</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Conservator, furniture</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Equality and diversity officer</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Research scientist (maths)</td>
+      <td>8</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Television production assistant</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Financial controller</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Health and safety adviser</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Geographical information systems officer</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, rural practice</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Wellsite geologist</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Chemical engineer</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Counsellor</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Environmental education officer</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Proofreader</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Biomedical engineer</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Politician's assistant</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Contracting civil engineer</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Volunteer coordinator</td>
+      <td>8</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Hydrologist</td>
+      <td>11</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Energy manager</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Gaffer</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Editor, commissioning</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, electrical</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Administrator, sports</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Transport planner</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Legal executive</td>
+      <td>6</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Television/film/video producer</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Editor, film/video</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Location manager</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Chief Strategy Officer</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Immunologist</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Hydrologist</td>
+      <td>2</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Programme researcher, broadcasting/film/video</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, building services</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Dietitian</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Banker</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Intelligence analyst</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Surveyor, hydrographic</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Counselling psychologist</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>IT trainer</td>
+      <td>7</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Prison officer</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Chemist, analytical</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Database administrator</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Editor, film/video</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Cartographer</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Arts development officer</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Immigration officer</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Aid worker</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Field seismologist</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Therapist, speech and language</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Scientist, physiological</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Horticultural consultant</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Banker</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Sport and exercise psychologist</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Ambulance person</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Lighting technician, broadcasting/film/video</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Tax inspector</td>
+      <td>6</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Armed forces logistics/support/administrative officer</td>
+      <td>2</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Television camera operator</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Health service manager</td>
+      <td>10</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, water</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Midwife</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Chartered legal executive (England and Wales)</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Broadcast presenter</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Museum/gallery curator</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Catering manager</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, agricultural</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Pathologist</td>
+      <td>9</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Teacher, secondary school</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Sub</td>
+      <td>7</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, occupational</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Arboriculturist</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Printmaker</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, communications</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Homeopath</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Operational investment banker</td>
+      <td>6</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, agricultural</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Fine artist</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Research officer, government</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Health promotion specialist</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Archivist</td>
+      <td>19</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Chemical engineer</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Special educational needs teacher</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Diplomatic Services operational officer</td>
+      <td>10</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, manufacturing systems</td>
+      <td>18</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Technical author</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Chartered management accountant</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Outdoor activities/education manager</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Physiological scientist</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Race relations officer</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Statistician</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Charity fundraiser</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Publishing copy</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Company secretary</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Radio producer</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, nutritional</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Retail manager</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Accountant, chartered management</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Scientist, product/process development</td>
+      <td>10</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Dealer</td>
+      <td>17</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Building control surveyor</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Pension scheme manager</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Theatre stage manager</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Consulting civil engineer</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Sport and exercise psychologist</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Government social research officer</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Charity officer</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, planning and development</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Pension scheme manager</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Environmental education officer</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Herbalist</td>
+      <td>17</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Therapist, speech and language</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Nurse, children's</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Armed forces operational officer</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Medical sales representative</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Artist</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Radiation protection practitioner</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Pension scheme manager</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Pharmacologist</td>
+      <td>15</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, nutritional</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Materials engineer</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Television floor manager</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Administrator, charities/voluntary organisations</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Radio producer</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Designer, interior/spatial</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>International aid/development worker</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Environmental manager</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Trade mark attorney</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Product manager</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Chartered accountant</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Hydrologist</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Ship broker</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Waste management officer</td>
+      <td>18</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Investment analyst</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Sales promotion account executive</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Teacher, English as a foreign language</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Sales promotion account executive</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, insurance</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Insurance broker</td>
+      <td>5</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Pilot, airline</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Applications developer</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Warden/ranger</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Development worker, community</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Probation officer</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Rural practice surveyor</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Chief Marketing Officer</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Applications developer</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Office manager</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Biochemist, clinical</td>
+      <td>17</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Ceramics designer</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Plant breeder/geneticist</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Education officer, museum</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Advertising copywriter</td>
+      <td>17</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Education officer, community</td>
+      <td>2</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Television/film/video producer</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Archaeologist</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Musician</td>
+      <td>17</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Analytical chemist</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Equities trader</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Hydrographic surveyor</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Public librarian</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Pensions consultant</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Structural engineer</td>
+      <td>18</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Veterinary surgeon</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Control and instrumentation engineer</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Armed forces logistics/support/administrative officer</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Conservation officer, nature</td>
+      <td>17</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Building control surveyor</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Chief of Staff</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Television/film/video producer</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Rural practice surveyor</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Video editor</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Recruitment consultant</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Scientist, research (life sciences)</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Product/process development scientist</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Museum education officer</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Textile designer</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Television production assistant</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Buyer, industrial</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Designer, blown glass/stained glass</td>
+      <td>10</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Advertising copywriter</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Restaurant manager</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Translator</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, biomedical</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Occupational psychologist</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Media planner</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Higher education careers adviser</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Horticulturist, commercial</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Armed forces technical officer</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Claims inspector/assessor</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Professor Emeritus</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Psychotherapist, dance movement</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Health service manager</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Counsellor</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, sports</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Office manager</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Outdoor activities/education manager</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Conference centre manager</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Air cabin crew</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Chartered accountant</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Radio producer</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Copy</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Film/video editor</td>
+      <td>10</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Ergonomist</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Horticulturist, amenity</td>
+      <td>13</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Glass blower/designer</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Adult nurse</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Chief Technology Officer</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, mining</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Risk analyst</td>
+      <td>15</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Trading standards officer</td>
+      <td>6</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Magazine features editor</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Multimedia specialist</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Broadcast journalist</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Production manager</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Clinical cytogeneticist</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, manufacturing</td>
+      <td>20</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Civil Service administrator</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Designer, interior/spatial</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, horticultural</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Accountant, chartered</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Biomedical engineer</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Teacher, secondary school</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Hospital pharmacist</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, commercial/residential</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, petroleum</td>
+      <td>7</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Ranger/warden</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Charity officer</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Charity fundraiser</td>
+      <td>9</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Nurse, mental health</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Plant breeder/geneticist</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Oncologist</td>
+      <td>7</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Surveyor, quantity</td>
+      <td>15</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, civil (consulting)</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Agricultural consultant</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Scientist, research (physical sciences)</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Housing manager/officer</td>
+      <td>17</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Haematologist</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, civil (consulting)</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Radiation protection practitioner</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Psychologist, forensic</td>
+      <td>2</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Media buyer</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Tax adviser</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, electronics</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Media planner</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Seismic interpreter</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Research officer, government</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Field seismologist</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Barista</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Ship broker</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Intelligence analyst</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Audiological scientist</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Retail banker</td>
+      <td>10</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Commercial art gallery manager</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Actor</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Trade union research officer</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Passenger transport manager</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Media planner</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Forest/woodland manager</td>
+      <td>17</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Fish farm manager</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Doctor, hospital</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Patent examiner</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Dealer</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Petroleum engineer</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Artist</td>
+      <td>6</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Theatre director</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Information officer</td>
+      <td>7</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Armed forces technical officer</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Professor Emeritus</td>
+      <td>4</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Community education officer</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Systems developer</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Arboriculturist</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Telecommunications researcher</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Hospital pharmacist</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Press sub</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Volunteer coordinator</td>
+      <td>14</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Mining engineer</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Estate manager/land agent</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Broadcast presenter</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Conservation officer, nature</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Site engineer</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Retail banker</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Academic librarian</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Drilling engineer</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Conservator, furniture</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Biomedical engineer</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, aeronautical</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Clinical embryologist</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Chemist, analytical</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Quantity surveyor</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Health service manager</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Therapist, art</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Accounting technician</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Producer, radio</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Professor Emeritus</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Runner, broadcasting/film/video</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Media buyer</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Film/video editor</td>
+      <td>2</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Building services engineer</td>
+      <td>17</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Therapist, sports</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Landscape architect</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Armed forces operational officer</td>
+      <td>10</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Operational investment banker</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Health physicist</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Cytogeneticist</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Hydrologist</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Hydrologist</td>
+      <td>14</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Warden/ranger</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Designer, industrial/product</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Financial adviser</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Child psychotherapist</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Chartered management accountant</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Hydrogeologist</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Horticultural therapist</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, electronics</td>
+      <td>11</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Meteorologist</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, speech and language</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Barista</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Production designer, theatre/television/film</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Teacher, primary school</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Lecturer, further education</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, building</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Commercial art gallery manager</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Actuary</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Psychologist, prison and probation services</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Teacher, adult education</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Information systems manager</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, structural</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Horticulturist, commercial</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Commercial horticulturist</td>
+      <td>4</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Training and development officer</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Civil Service administrator</td>
+      <td>8</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Actuary</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Scientist, audiological</td>
+      <td>9</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Presenter, broadcasting</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Maintenance engineer</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Animal technologist</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>International aid/development worker</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Accountant, chartered certified</td>
+      <td>4</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Consulting civil engineer</td>
+      <td>18</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Automotive engineer</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Heritage manager</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Prison officer</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Industrial buyer</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Best boy</td>
+      <td>5</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Social researcher</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Archivist</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, insurance</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Maintenance engineer</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Loss adjuster, chartered</td>
+      <td>17</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Haematologist</td>
+      <td>18</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Museum education officer</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Public relations account executive</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Surveyor, land/geomatics</td>
+      <td>9</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Magazine features editor</td>
+      <td>11</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Dealer</td>
+      <td>2</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, structural</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Chartered legal executive (England and Wales)</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Police officer</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Event organiser</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Teacher, secondary school</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, civil (consulting)</td>
+      <td>20</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Drilling engineer</td>
+      <td>18</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Production assistant, radio</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Financial manager</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Special effects artist</td>
+      <td>5</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Retail merchandiser</td>
+      <td>16</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Special effects artist</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Operations geologist</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Water quality scientist</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Barista</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Microbiologist</td>
+      <td>19</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Therapist, occupational</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Surveyor, planning and development</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Armed forces logistics/support/administrative officer</td>
+      <td>6</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Commercial/residential surveyor</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Social research officer, government</td>
+      <td>10</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Designer, exhibition/display</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Government social research officer</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Nutritional therapist</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Teacher, secondary school</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Midwife</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Theatre manager</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Clinical embryologist</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Geochemist</td>
+      <td>8</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Local government officer</td>
+      <td>19</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Mental health nurse</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Museum/gallery conservator</td>
+      <td>12</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Radiographer, diagnostic</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Commercial/residential surveyor</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Museum education officer</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Contracting civil engineer</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Television camera operator</td>
+      <td>11</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Fashion designer</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Acupuncturist</td>
+      <td>11</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Estate manager/land agent</td>
+      <td>8</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Administrator</td>
+      <td>1</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Probation officer</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Retail buyer</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, speech and language</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, production</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Naval architect</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Cabin crew</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Prison officer</td>
+      <td>2</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Fisheries officer</td>
+      <td>9</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>IT sales professional</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Phytotherapist</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Geophysicist/field seismologist</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Scientist, research (life sciences)</td>
+      <td>5</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Equality and diversity officer</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Radiation protection practitioner</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, broadcasting (operations)</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Field trials officer</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Warden/ranger</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Dance movement psychotherapist</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Development worker, international aid</td>
+      <td>5</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Designer, furniture</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Social research officer, government</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Multimedia specialist</td>
+      <td>3</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Occupational psychologist</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Geophysical data processor</td>
+      <td>7</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Commercial art gallery manager</td>
+      <td>1</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, electronics</td>
+      <td>9</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Conference centre manager</td>
+      <td>10</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Nurse, learning disability</td>
+      <td>10</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Animator</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Music tutor</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Illustrator</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Structural engineer</td>
+      <td>11</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Editor, magazine features</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Tourist information centre manager</td>
+      <td>1</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Media buyer</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Psychologist, educational</td>
+      <td>2</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Claims inspector/assessor</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Editorial assistant</td>
+      <td>17</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Catering manager</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Special effects artist</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Loss adjuster, chartered</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Embryologist, clinical</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Doctor, hospital</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, mining</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Interior and spatial designer</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Holiday representative</td>
+      <td>13</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Engineer, aeronautical</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Personnel officer</td>
+      <td>4</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Learning disability nurse</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Recruitment consultant</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Surveyor, rural practice</td>
+      <td>16</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Psychologist, occupational</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Ceramics designer</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Administrator, charities/voluntary organisations</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, control and instrumentation</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Doctor, general practice</td>
+      <td>10</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Volunteer coordinator</td>
+      <td>15</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Psychologist, prison and probation services</td>
+      <td>6</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Investment banker, operational</td>
+      <td>12</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Geophysical data processor</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Landscape architect</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Theme park manager</td>
+      <td>20</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Software engineer</td>
+      <td>16</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Health and safety inspector</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Scientist, research (physical sciences)</td>
+      <td>9</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Pharmacologist</td>
+      <td>9</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Nature conservation officer</td>
+      <td>6</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Podiatrist</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Commercial/residential surveyor</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Programmer, systems</td>
+      <td>4</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Textile designer</td>
+      <td>3</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Sales professional, IT</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Product designer</td>
+      <td>18</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, music</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Tourism officer</td>
+      <td>11</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Therapist, art</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>English as a second language teacher</td>
+      <td>15</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Gaffer</td>
+      <td>19</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Higher education lecturer</td>
+      <td>18</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Warehouse manager</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Museum education officer</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Psychiatrist</td>
+      <td>14</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Programmer, multimedia</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Tourism officer</td>
+      <td>4</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, petroleum</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Biochemist, clinical</td>
+      <td>5</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Information systems manager</td>
+      <td>6</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Analytical chemist</td>
+      <td>13</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Doctor, hospital</td>
+      <td>16</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Network engineer</td>
+      <td>3</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Adult nurse</td>
+      <td>10</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Estate manager/land agent</td>
+      <td>10</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Technical brewer</td>
+      <td>2</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Financial controller</td>
+      <td>18</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Health promotion specialist</td>
+      <td>7</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Operations geologist</td>
+      <td>14</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Engineer, energy</td>
+      <td>12</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Minerals surveyor</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Housing manager/officer</td>
+      <td>1</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Management consultant</td>
+      <td>2</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Chiropractor</td>
+      <td>15</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>IT sales professional</td>
+      <td>4</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Scientist, clinical (histocompatibility and immunogenetics)</td>
+      <td>11</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Surveyor, minerals</td>
+      <td>8</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Engineer, structural</td>
+      <td>19</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>General practice doctor</td>
+      <td>7</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Research scientist (maths)</td>
+      <td>13</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Water engineer</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Industrial/product designer</td>
+      <td>3</td>
+      <td>Contract</td>
+    </tr>
+    <tr>
+      <td>Catering manager</td>
+      <td>17</td>
+      <td>Part Time</td>
+    </tr>
+    <tr>
+      <td>Radiographer, therapeutic</td>
+      <td>8</td>
+      <td>Freelance</td>
+    </tr>
+    <tr>
+      <td>Freight forwarder</td>
+      <td>12</td>
+      <td>Full Time</td>
+    </tr>
+    <tr>
+      <td>Research officer, political party</td>
+      <td>20</td>
+      <td>Freelance</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
